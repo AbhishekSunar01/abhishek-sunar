@@ -20,8 +20,8 @@ export default function HighlightSection() {
         }}
         className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
-        Hi, I&apos;m Abhishek Sunar – a passionate and dedicated front-end
-        developer with over one year of professional experience as a{" "}
+        Hi, I&apos;m – a passionate and dedicated front-end developer with over
+        one year of professional experience as a{" "}
         <Highlight className="text-black dark:text-white">
           React/Next.js developer,
         </Highlight>
