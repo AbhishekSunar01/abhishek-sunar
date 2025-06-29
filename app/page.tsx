@@ -1,3 +1,4 @@
+import Skills from "@/components/skills";
 import { Button } from "@/components/ui/button";
 import profile from "@/public/main.jpeg";
 import Image from "next/image";
@@ -26,6 +27,10 @@ export default function Page() {
         <div className="w-2 h-2 bg-green-500 rounded-full"></div>
         Available for work
       </Button>
+
+      <div className="mt-40 w-full">
+        <Skills />
+      </div>
     </div>
   );
 }
