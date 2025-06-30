@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { Card } from "./ui/card";
 
+import { StaticImageData } from "next/image";
+
 interface Skill {
   label: string;
-  image: any;
+  image: StaticImageData;
 }
 
 interface SkillGroupProps {
