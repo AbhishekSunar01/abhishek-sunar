@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={`${manrope.variable} antialiased mx-60`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
