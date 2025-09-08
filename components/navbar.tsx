@@ -5,10 +5,12 @@ import { Sparkle } from "lucide-react";
 export default function Navbar() {
   return (
     <div className="flex items-center justify-between py-4">
-      <h2 className="flex gap-2 items-center">
-        <Sparkle />
-        Abhishek. S
-      </h2>
+      <Link href="/">
+        <h2 className="flex gap-2 items-center hover:cursor-pointer">
+          <Sparkle />
+          Abhishek. S
+        </h2>
+      </Link>
       <nav className="flex items-center md:space-x-8 space-x-2">
         <Link href="/">
           <h4 className="hover:text-primary">Skills</h4>
