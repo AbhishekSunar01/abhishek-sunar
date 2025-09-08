@@ -20,10 +20,13 @@ export default function AboutPage() {
 
       {/* Header */}
       <div className="text-center md:w-[600px] mt-6">
-        <h1 className="text-3xl font-bold">Abhishek Sunar</h1>
-        <h2 className="text-muted-foreground md:text-xl text-sm">
+        <div className="md:text-3xl text-xl font-bold">Abhishek Sunar</div>
+        <div className="text-muted-foreground md:text-xl text-sm mt-2">
           Software Engineer | Full Stack Developer
-        </h2>
+        </div>
+        <div className="text-muted-foreground md:text-base text-xs italic mt-1">
+          Tutor & Guitarist
+        </div>
       </div>
 
       {/* Background */}
