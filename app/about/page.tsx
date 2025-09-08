@@ -106,7 +106,7 @@ export default function AboutPage() {
             <h3 className="text-lg font-semibold">
               Informatics College Pokhara
             </h3>
-            <span className="text-muted-foreground">2022 - Present</span>
+            <span className="text-muted-foreground">2021 - 2023</span>
           </div>
         </div>
         <p className="text-muted-foreground md:text-lg text-md w-full mt-2 text-justify leading-relaxed">
