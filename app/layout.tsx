@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${manrope.variable} antialiased mx-60`}>
+      <body className={`${manrope.variable} antialiased md:mx-60 mx-8`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

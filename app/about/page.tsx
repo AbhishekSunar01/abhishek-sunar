@@ -5,10 +5,10 @@ import yuzu from "@/public/profile.jpeg";
 
 export default function AboutPage() {
   const container =
-    "w-full flex items-center justify-center mt-8 flex-col px-24";
+    "w-full flex items-center justify-center md:mt-8 mt-2 flex-col md:px-24";
 
   return (
-    <div className="mb-16 flex items-center justify-center flex-col">
+    <div className="md:mb-16 mb-6 flex items-center justify-center flex-col">
       {/* Profile Image */}
       <Image
         src={yuzu}
@@ -19,17 +19,19 @@ export default function AboutPage() {
       />
 
       {/* Header */}
-      <div className="text-center w-[600px] mt-6">
+      <div className="text-center md:w-[600px] mt-6">
         <h1 className="text-3xl font-bold">Abhishek Sunar</h1>
-        <h2 className="text-muted-foreground text-xl">
+        <h2 className="text-muted-foreground md:text-xl text-sm">
           Software Engineer | Full Stack Developer
         </h2>
       </div>
 
       {/* Background */}
       <div className={container}>
-        <h2 className="text-start w-full text-2xl font-semibold">Background</h2>
-        <p className="text-muted-foreground text-lg w-full mt-2 text-justify leading-relaxed">
+        <h2 className="text-start w-full md:text-2xl text-xl font-semibold">
+          Background
+        </h2>
+        <p className="text-muted-foreground md:text-lg text-md w-full md:mt-2 mt-1 text-justify leading-relaxed">
           I work with a modern stack, specializing in <strong>Next.js</strong>{" "}
           for responsive, high-performance front-ends and{" "}
           <strong>Spring Boot</strong> for robust and secure back-ends. Over
@@ -44,7 +46,9 @@ export default function AboutPage() {
 
       {/* Experience */}
       <div className={container}>
-        <h2 className="text-start w-full text-2xl font-semibold">Experience</h2>
+        <h2 className="text-start w-full md:text-2xl text-xl font-semibold">
+          Experience
+        </h2>
         <div className="flex items-start justify-between w-full mt-2 flex-col space-y-8">
           <Experience
             title="Academic Tutor at Informatics College Pokhara"
@@ -93,7 +97,9 @@ export default function AboutPage() {
 
       {/* Education */}
       <div className={container}>
-        <h2 className="text-start w-full text-2xl font-semibold">Education</h2>
+        <h2 className="text-start w-full md:text-2xl text-xl font-semibold">
+          Education
+        </h2>
         <div className="flex items-center justify-start gap-6 w-full mt-2">
           <GraduationCap />
           <div>
@@ -103,7 +109,7 @@ export default function AboutPage() {
             <span className="text-muted-foreground">2022 - Present</span>
           </div>
         </div>
-        <p className="text-muted-foreground text-lg w-full mt-2 text-justify leading-relaxed">
+        <p className="text-muted-foreground md:text-lg text-md w-full mt-2 text-justify leading-relaxed">
           Pursuing my Bachelor’s in Computing, where I’ve strengthened my
           foundation in software engineering, algorithms, and database systems.
           Alongside academics, I actively contribute to practical projects,

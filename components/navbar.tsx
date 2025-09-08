@@ -9,13 +9,14 @@ export default function Navbar() {
         <Sparkle />
         Abhishek. S
       </h2>
-      <nav className="flex items-center space-x-8">
+      <nav className="flex items-center md:space-x-8 space-x-2">
         <Link href="/">
           <h4 className="hover:text-primary">Skills</h4>
         </Link>
         <Link href="/about">
           <h4>About</h4>
         </Link>
+        <div className="md:block hidden "></div>
         <ModeToggle />
       </nav>
     </div>

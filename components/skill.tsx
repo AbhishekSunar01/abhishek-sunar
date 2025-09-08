@@ -26,9 +26,58 @@ import gitlab from "@/public/gitlab.svg";
 import docker from "@/public/docker.png";
 import SkillGroup from "./skill-group";
 
+// export default function Skills() {
+//   return (
+//     <div className="w-full flex flex-col gap-10">
+//       <SkillGroup
+//         title="Frontend"
+//         skills={[
+//           { label: "HTML", image: html },
+//           { label: "CSS", image: css },
+//           { label: "React", image: react },
+//           { label: "Tailwind CSS", image: tailwind },
+//           { label: "SCSS", image: scss },
+//           { label: "TanStack", image: tanstack },
+//           { label: "Redux", image: redux },
+//           { label: "Zustand", image: zustand },
+//         ]}
+//       />
+
+//       <SkillGroup
+//         title="Backend"
+//         skills={[
+//           { label: "Java", image: java },
+//           { label: "Spring", image: spring },
+//           { label: "Node.js", image: nodejs },
+//           { label: "Express", image: express },
+//         ]}
+//       />
+
+//       <SkillGroup
+//         title="Databases"
+//         skills={[
+//           { label: "MongoDB", image: mongodb },
+//           { label: "MySQL", image: mysql },
+//           { label: "PostgreSQL", image: postgresql },
+//         ]}
+//       />
+
+//       <SkillGroup
+//         title="Tools & Technologies"
+//         skills={[
+//           { label: "Git", image: git },
+//           { label: "GitHub", image: github },
+//           { label: "GitLab", image: gitlab },
+//           { label: "Docker", image: docker },
+//         ]}
+//       />
+//     </div>
+//   );
+// }
+
 export default function Skills() {
   return (
-    <div className="w-full flex flex-col gap-10">
+    <div className="w-full flex flex-col md:gap-12 gap-4">
       <SkillGroup
         title="Frontend"
         skills={[
