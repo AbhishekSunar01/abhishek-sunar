@@ -6,8 +6,10 @@ import yuzu from "@/public/profile.jpeg";
 export default function AboutPage() {
   const container =
     "w-full flex items-center justify-center mt-8 flex-col px-24";
+
   return (
     <div className="mb-16 flex items-center justify-center flex-col">
+      {/* Profile Image */}
       <Image
         src={yuzu}
         alt="Profile"
@@ -15,42 +17,84 @@ export default function AboutPage() {
         width={200}
         height={200}
       />
+
+      {/* Header */}
       <div className="text-center w-[600px] mt-6">
-        <h1>Abhishek Sunar</h1>
+        <h1 className="text-3xl font-bold">Abhishek Sunar</h1>
         <h2 className="text-muted-foreground text-xl">
           Software Engineer | Full Stack Developer
         </h2>
       </div>
+
+      {/* Background */}
       <div className={container}>
-        <h2 className="text-start w-full">Background</h2>
-        <p className="text-muted-foreground text-lg w-full mt-2 text-justify">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime at
-          totam, odio tempora, alias, optio labore nemo expedita rerum provident
-          voluptate minima. Aperiam laboriosam est corrupti commodi nostrum
-          illum harum.lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Quisquam, voluptatum. Doloribus, cumque. Doloremque, Lorem ipsum dolor
-          sit amet, consectetur adipisicing elit. Sit, illo reiciendis nulla
-          fuga laborum minima neque ipsa eligendi? Consequuntur omnis
-          exercitationem nam consectetur quisquam dicta sunt numquam dolorem ut
-          deleniti!
+        <h2 className="text-start w-full text-2xl font-semibold">Background</h2>
+        <p className="text-muted-foreground text-lg w-full mt-2 text-justify leading-relaxed">
+          I work with a modern stack, specializing in <strong>Next.js</strong>{" "}
+          for responsive, high-performance front-ends and{" "}
+          <strong>Spring Boot</strong> for robust and secure back-ends. Over
+          time, I’ve built projects ranging from SaaS tools and dashboards to
+          e-commerce platforms and custom applications, always focusing on clean
+          architecture, performance, and maintainability. Beyond just coding, I
+          enjoy solving real-world problems through technology, continuously
+          learning, and experimenting with new frameworks and ideas to stay
+          ahead in the ever-changing web development landscape.
         </p>
       </div>
 
+      {/* Experience */}
       <div className={container}>
-        <h2 className="text-start w-full">Experience</h2>
-        <div className="flex items-start justify-between w-full mt-2 flex-col">
-          <Experience title="Software Engineer at XYZ Corp" />
-          <div className="border-2 h-12 ml-3"></div>
-          <Experience title="Software Engineer at XYZ Corp" />
-          <div className="border-2 h-12 ml-3"></div>
-          <Experience title="Software Engineer at XYZ Corp" />
-          <div className="border-2 h-12 ml-3"></div>
-          <Experience title="Software Engineer at XYZ Corp" />
+        <h2 className="text-start w-full text-2xl font-semibold">Experience</h2>
+        <div className="flex items-start justify-between w-full mt-2 flex-col space-y-8">
+          <Experience
+            title="Academic Tutor at Informatics College Pokhara"
+            timeline="Feb, 2025 - Present"
+            location="Matepani-12, Pokhara, Kaski, Nepal"
+            descriptionPoints={[
+              "Led workshops and tutorials on Java programming fundamentals.",
+              "Guided students in object-oriented programming and problem-solving.",
+              "Supported practical sessions to strengthen coding proficiency.",
+            ]}
+          />
+
+          <Experience
+            title="ReactJs Tutor at Mind Craft Academy"
+            timeline="Oct, 2024 - Jan, 2025"
+            location="Mahendrapool, Pokhara, Nepal"
+            descriptionPoints={[
+              "Guided students through fundamental and advanced React concepts.",
+              "Taught state management, component lifecycle, and modern front-end practices.",
+              "Mentored students through hands-on projects and problem-solving exercises.",
+            ]}
+          />
+
+          <Experience
+            title="Front End Developer at KROFILE LLC."
+            timeline="Dec, 2023 - Jan, 2025"
+            location="Concord, NC 28025 US (Remote – Nepal)"
+            descriptionPoints={[
+              "Developed high-performance websites for krofile.com using Next.js.",
+              "Collaborated with designers and backend developers to deliver client projects.",
+              "Optimized front-end code for speed, scalability, and maintainability.",
+            ]}
+          />
+
+          <Experience
+            title="ReactJs Intern at Brand Builder"
+            timeline="Sep, 2023 - Nov, 2023"
+            location="Mahendrapool, Pokhara, Nepal"
+            descriptionPoints={[
+              "Assisted in developing responsive and dynamic websites.",
+              "Gained hands-on experience in front-end development using React.js.",
+            ]}
+          />
         </div>
       </div>
+
+      {/* Education */}
       <div className={container}>
-        <h2 className="text-start w-full">Education</h2>
-        <div className="flex items-center justify-start gap-6 w-full">
+        <h2 className="text-start w-full text-2xl font-semibold">Education</h2>
+        <div className="flex items-center justify-start gap-6 w-full mt-2">
           <GraduationCap />
           <div>
             <h3 className="text-lg font-semibold">
@@ -59,12 +103,12 @@ export default function AboutPage() {
             <span className="text-muted-foreground">2022 - Present</span>
           </div>
         </div>
-        <p className="text-muted-foreground text-lg w-full mt-2 text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptatum. Doloribus, cumque. Doloremque, Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Sit, illo reiciendis nulla fuga laborum
-          minima neque ipsa eligendi? Consequuntur omnis exercitationem nam
-          consectetur quisquam dicta sunt numquam dolorem ut deleniti!
+        <p className="text-muted-foreground text-lg w-full mt-2 text-justify leading-relaxed">
+          Pursuing my Bachelor’s in Computing, where I’ve strengthened my
+          foundation in software engineering, algorithms, and database systems.
+          Alongside academics, I actively contribute to practical projects,
+          teaching, and freelance development work, which has helped me balance
+          theory with real-world application.
         </p>
       </div>
     </div>

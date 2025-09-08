@@ -14,13 +14,15 @@ export default function Page() {
         height={200}
       />
       <h1 className="text-center w-[600px] mt-6">
-        Hii I am Abhishek Sunar, a Software Engineer
+        Hi, I’m Abhishek Sunar, a Software Engineer and Web Developer.
       </h1>
       <p className="text-muted-foreground text-xl text-center w-[700px]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-        consectetur molestiae minus reiciendis, voluptate sapiente explicabo
-        doloremque, deleniti incidunt itaque nisi. Accusantium magnam, quae quos
-        dolor ea esse provident ab?
+        I specialize in crafting dynamic, high-performance websites and
+        applications that bring ideas to life. With expertise in Next.js for
+        modern, responsive front-ends and Spring Boot for robust back-end
+        systems, I focus on building scalable, reliable, and user-friendly
+        solutions. My goal is simple: to transform complex problems into clean,
+        impactful digital experiences that help businesses and users succeed.
       </p>
       <div className="my-4 flex items-center gap-6"></div>
       <Button className="mt-4 p-6 text-xl flex items-center gap-2">
